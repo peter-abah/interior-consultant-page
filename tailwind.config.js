@@ -2,6 +2,7 @@ module.exports = {
   purge: {
     enabled: true,
     content: ['./index.html'],
+    safelist: ['w-screen'],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
