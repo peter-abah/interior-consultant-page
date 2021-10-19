@@ -7,53 +7,64 @@
   maximum-scale=5">
   <link rel="icon" href="devchallenges.png">
   <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
   <title>Devchallenges</title>
 </head>
 
-<body>
-  <nav>
-    <div>
-      <p>THIS INTERIOR</p>
+<body class="px-3 font-sans bg-secondary text-primary">
+  <nav class="py-5 flex justify-between items-center">
+    <div class="p-2 border border-primary">
+      <p class="font-serif font-extralight text-sm">THIS INTERIOR</p>
     </div>
 
-    <button>
-  
+    <button class="relative z-20">
+      <span class="material-icons-outlined absolute top-0 left-0 text-4xl transition-all duration-500">menu</span>
+      <span class="material-icons-outlined opacity-0 text-4xl transition-all duration-500">close</span>
     </button>
 
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Collection</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+    <ul class="bg-secondary fixed top-0 right-0 left-0 bottom-0 z-10 flex flex-col justify-center items-center transition-all duration-500">
+      <li class="my-2 py-2 font-bold text-lg border-b-2"><a href="#">Home</a></li>
+      <li class="my-2 py-2 font-bold text-lg"><a href="#">Collection</a></li>
+      <li class="my-2 py-2 font-bold text-lg"><a href="#">About</a></li>
+      <li class="my-2 py-2 font-bold text-lg"><a href="#">Contact</a></li>
     </ul>
   </nav>
 
-  <header>
-    <h1>Modern interior</h1>
-    <p>A full-Service residential & commercial interior design and staging company 
+  <header class="mb-9 pt-5">
+    <h1 class="mb-6 font-display font-medium text-4xl">Modern interior</h1>
+    <p class="w-60 mb-6 text-sm">A full-Service residential & commercial interior design and staging company 
       offering professionalorganizing & eco-services.</p>
-    <a href="#">Read more</a>
+    <a class="w-max flex items-center font-bold text-sm" href="#">
+      <span class="hover:underline transition-all">Read more </span>
+      <span class="ml-4 material-icons-outlined">trending_flat</span>
+    </a>
   </header>
 
-  <main>
+  <main class="relative mb-36">
     <h2 class="invisible w-0 h-0"></h2>
-    <img src="images/photo1" alt="A beautiful room" aria-hidden="true">
-    <div>
-      <div>
-        <img src="images/photo2" alt="Aliza Webber" aria-hidden="true">
-        <div>
-          <h3>Aliza Webber</h3>
-          <p>Interior designer</p>
-        </div>
+    <img class="w-auto mx-auto" src="images/photo1.png" width="280" alt="A beautiful room" aria-hidden="true">
 
-        <p>Designed in 2020 by ALiza Webber</p>
+    <div class="absolute right-3 -bottom-20 w-72 p-5 bg-secondary shadow">
+      <div class="flex mb-5">
+        <img class="w-9 mr-3.5 rounded-full" src="images/photo2.png" width="30" alt="Aliza Webber" aria-hidden="true">
+        <div>
+          <h3 class="text-xs font-medium">Aliza Webber</h3>
+          <p class="text-xxs text-gray font-medium">Interior designer</p>
+        </div>
       </div>
+
+      <p class="w-4/5 font-display font-bold text-lg">Designed in 2020 by Aliza Webber</p>
     </div>
   </main>
 
-  <footer>
-    <p>created by <a href="#">Peter Abah</a> - <a href="#">devChallenges</a></p>
+  <footer class="mb-6">
+    <p class="text-center text-sm text-gray font-medium">created by <a class="underline font-bold hover:no-underline transition-all" href="#">Peter Abah</a> - <a class="underline hover:no-underline transition-all" href="#">devChallenges</a></p>
   </footer>
 </body>
 
