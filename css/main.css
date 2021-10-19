@@ -779,6 +779,10 @@ video {
   border-bottom-width: 2px;
 }
 
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
+}
+
 .border-primary {
   border-color: var(--color-primary);
 }
